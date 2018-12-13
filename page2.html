@@ -1,31 +1,103 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
-</head>
-<body>
     
-    <div id="topDiv">
-        <h1>Divs</h1>
+    <title>HTML controls</title>
 
-        <div>div 1</div>
-        <div>div 2</div>
-        <div>div 3</div>
-    </div>
-    <div>
-        External image
-        <img src="https://cdn.pixabay.com/photo/2018/11/24/01/35/christmas-motif-3834860_960_720.jpg" alt="casita" width=" " height="" >  <!-- alt texto alternativo-->
-    Broken image
-    <img src="local.jpg" alt="not found image">
+  </head>
+
+<body>
+
+    <h2>Articles and sections</h2>
+
+    <article>
+<section>
+    section 1 <i> with italics</i> and <u>underline</u>
+</section>
+
+<section>
+    <p>
+        section 2 <b>with bold text</b>
+    </p>
+</section>
+
+    </article>
+
+    <h2> Tables </h2>
+    <table border="1", style="background-color:#ccffff">
+          
+        <thead>head 
+
+<caption> Title </caption>
+<tr> 
+    <td><b>Columna 0 </b></td>
+    <td><b>Columna 1 </b></td>
+    <td><b>Columna 2 </b></td>
+</tr>
+
+        </thead>
+
+        <tbody> 
+            <tr> <!-- row 0-->
+                <td><div> div row 0, column0 🌈</div> </td>
+                <td>row 0, column1 😸</td>
+                <td>row 0, column2 😁</td>
+            </tr>
+            <tr> <!-- row 1-->
+                <td>row 1, column0 😋 </td>
+                <td>row 1, column1 😍</td>
+                <td>row 1, column2 ✨</td>
+            </tr>
+        </tbody>
+
+    </table>
+    <h2>Lists</h2>
+    Unorder list
+    <ul>
+        <li> Number 1</li>
+        <li> Number 2</li>
+    </ul>
+    Ordered list
+    <ol>
+            <li> Number </li>
+            <li> Number </li>
+    </ol>
+<div> 
+    <h2>Controls</h2>
+    <button value="text">boton</button>
     <br>
-    Internal image
     <br>
-    <img src="local.png" alt="volcan" width=" " height="">
-    </div>
-</body>
-</html>
+    Drop-down
+<select>
+<option>Option 1</option>
+<option>Option 2</option>
+</select>
+<br />
+
+<label title="Password" for=""> Password</label>
+<br /> 
+<input type="password" value="123" placeholder="pass"/>
+<br /> Number
+<input type="number"  placeholder="123"/>
+
+<br/>
+<h3> Radio buttons</h3>
+<input type="radio" name="animals" value="cats"> cats </input>
+<input type="radio" name="animals" value="dogs"/> dogs </input>
+
+<br/>
+<br/>
+<label>Other:</label>
+<input type="text">
+<br/>
+
+<h3> Checkboxes</h3>
+
+<input type="checkbox"> Apples </input>
+<input type="checkbox"> Grapes </input>
+
+</div>
+<footer>
+    <hr />
+    Footer 
+</footer>
