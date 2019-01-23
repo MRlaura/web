@@ -1,87 +1,12 @@
-body
-{
-    margin: 5px;
-    padding: 5px;
-    background: #E4C65D;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 12pt;
-    color: rgba(0,0,0,.6);
-}
-ul.lista {
-    list-style-image: url('gati.png');
-    padding: 5;
-    margin: 2;    
+body {
+    font-family: Verdana;
 }
 
-p{ font-family:Verdana, Geneva, Tahoma, sans-serif; color: blueviolet; font-size: 32px;}
-h2{font-size: 2.0em;
-text-align: center;}
-h3{font-size: 2.0em}
-
-#tabl {
-	padding: 80px 40px 80px 40px;
-	margin: 5px;
+.highlight {
+    background-color: yellow;
 }
 
-.wrapper
-	{
-		overflow: hidden;
-		padding: 5em 0em 5em 0em;
-		background: #FFF;
-	}
+.normal {
+    background-color: white;
 
-	#wrapper1
-	{
-		background: #FFF;
-	}
-
-    #three-column
-	{
-		text-align: center;
-		color: #FFF;
-	}
-	
-	#three-column h2
-	{
-		margin: 1em 0em;
-		font-size: 1.5em;
-		font-weight: 700;
-    }
-    #three-column #tbox1,
-	#three-column #tbox2,
-	#three-column #tbox3
-	{
-		float: left;
-		width: 320px;
-		padding: 80px 40px 80px 40px;
-	}
-
-	#three-column #tbox1
-	{
-		background: #F67C78;
-	}
-
-	#three-column #tbox2
-	{
-		background: #79C4CA;
-	}
-
-
-	#three-column #tbox3
-	{
-		background: #A8C269;
-	}
-
-	
-	#three-column .title
-	{
-		text-align: center;
-	}
-	
-	#three-column .title h2
-	{
-		font-size: 1.60em;
-		color: #FFF;
-	}
-	
-	
+}

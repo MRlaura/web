@@ -1,108 +1,122 @@
 <!DOCTYPE html>
 <html>
 <head>
-    
     <title>HTML controls</title>
-    <style>
-        p{font-family:Verdana, Geneva, Tahoma, sans-serif; color: blueviolet; font-size: 32px}
-       
-      </style>
-  </head>
-
+</head>
 <body>
-    <a href="index.html"> Go to index</a>
     <h2>Articles and sections</h2>
-
+    
     <article>
-<section>
-    section 1 <i> with italics</i> and <u>underline</u>
-</section>
+        <section>
+            section 1 <i>with italic</i> and <u>underline</u>
+        </section>
 
-<section>
-    <p>
-        section 2 <b>with bold text</b> 
-    </p>
-</section>
-
+        <section>
+            <p>
+                section 2 <b>with bold text </b>
+            </p>
+        </section>
     </article>
 
-    <h2> Tables </h2>
-    <table border="1", style="background-color:#ccffff">
-          
-        <thead>head 
-
-<caption> Title </caption>
-<tr> 
-    <td><b>Columna 0 </b></td>
-    <td><b>Columna 1 </b></td>
-    <td><b>Columna 2 </b></td>
-</tr>
-
-        </thead>
-
-        <tbody> 
-            <tr> <!-- row 0-->
-                <td><div> div row 0, column0 🌈</div> </td>
-                <td>row 0, column1 😸</td>
-                <td>row 0, column2 😁</td>
+    <h2>Tables</h2>
+    <table border="1">
+        <thead>
+            <caption>Table Title</caption>
+            <tr>
+                <td>
+                    <b>Column 0</b>
+                </td>
+                <td>
+                    Column 1
+                </td>
             </tr>
-            <tr> <!-- row 1-->
-                <td>row 1, column0 😋 </td>
-                <td>row 1, column1 😍</td>
-                <td>row 1, column2 ✨</td>
+        </thead>
+        <tbody>
+            <!-- This is the actual body of the table -->
+
+            <!-- Row 0 -->
+            <tr>
+                <td>
+                    <div>
+                        Row 0, column 0
+                        😁
+                    </div>
+                </td>
+                <td>Row 0, column 1 😂</td>
+                <td>Row 0, column 2 😃</td>
+            </tr>
+
+            <!-- Row 1 -->
+            <tr>
+                <td>Row 1, column 0 😆</td>
+                <td>Row 1, column 1 😉</td>
+                <td>Row 1, column 2 😊</td>
             </tr>
         </tbody>
-
     </table>
+
+    <!-- List section-->
+
     <h2>Lists</h2>
-    Unorder list
+
+    Un-order list
     <ul>
-        <li> Number 1</li>
-        <li> Number 2</li>
+        <li>Number 1</li>
+        <li>Number 2</li>
     </ul>
+
     Ordered list
     <ol>
-            <li> Number </li>
-            <li> Number </li>
+        <li>Number 1</li>
+        <li>Number 2</li>
     </ol>
-<div> 
+
     <h2>Controls</h2>
-    <button value="text">boton</button>
-    <br>
-    <br>
-    Drop-down
-<select>
-<option>Option 1</option>
-<option>Option 2</option>
-</select>
-<br />
 
-<label title="Password" for=""> Password</label>
-<br /> 
-<input type="password" value="123" placeholder="pass"/>
-<br /> Number
-<input type="number"  placeholder="123"/>
+    <div>
+        <button value="button">Click me!</button>
 
-<br/>
-<h3> Radio buttons</h3>
-<input type="radio" name="animals" value="cats"> cats </input>
-<input type="radio" name="animals" value="dogs"/> dogs </input>
+        <br />
 
-<br/>
-<br/>
-<label>Other:</label>
-<input type="text">
-<br/>
+        <h3>
+            Drop-down
+        </h3>
 
-<h3> Checkboxes</h3>
+        <select>
+            <option>Option 1</option>
+            <option>Option 2</option>
+        </select>
 
-<input type="checkbox"> Apples </input>
-<input type="checkbox"> Grapes </input>
+        <br />
 
-</div>
-<footer>
-    <hr />
-    Footer 
-</footer>
+        <label>Password</label>
+        <input type="password" value="123" />
+
+        <br />
+
+        <input type="number" placeholder="123" />
+
+        <br />
+
+        <h3>Radio buttons</h3>
+        <input type="radio" name="animals" value="cats">cats</input>
+        <input type="radio" name="animals" value="dogs">dogs</input>
+
+        <label>Other:</label>
+        <input type="text" />
+
+        <br />
+
+        <h3>
+            Checkboxes
+        </h3>
+        <input type="checkbox">apples</input>
+        <input type="checkbox">grapes</input>
+    </div>
+
+    <footer>
+        <hr />
+        Footer page
+    </footer>
 </body>
 </html>

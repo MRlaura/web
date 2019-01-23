@@ -3,148 +3,172 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   
-    
-    <script src="main.js"></script>
-    <title> 
-        example
-    </title>
-    <style>
-        p{ font-family:Verdana, Geneva, Tahoma, sans-serif; color: blueviolet; font-size: 32px;}
-        h2{font-size: 2.0em}
-        
-        .sect {
-             font-family:Verdana, Geneva, Tahoma, sans-serif; color:blue; font-size: 32px;
-             }
 
-      /**
-      Combined selector
-      **/
+    <!-- 
+        External CCS example
+        <link rel="stylesheet" type="text/css" media="screen" href="<externalURL>/main.css" />
+        <script src="main.js"></script>
+    -->
+    <link rel="stylesheet" type="text/css" media="screen" href="shared.css" />
+
+    <style>
+        h2 { font-size: 2.5em }
+
+        p {
+            font-family: 'Verdana'; 
+            font-size: 32px;
+            background: magenta;
+        }
+
+        /*
+        Combined Selector
+        */
+
         ol li {
-            color: crimson;
+            color: red;
         }
 
         ul li {
-           background-color: 	#68c4af;
-           color:#bd3c14;
+            background-color: cornflowerblue;
+            color: blue;
         }
-        /**
-      pseudo class
-      **/
-        ul li:nth-child(2) {
+
+        /*P-seudo class */
+        ul li:nth-child(2){
             text-decoration: underline;
+            font-size: 1.5em;
         }
-        
+
+        #specialName {
+            background: aqua;
+        }
+
         .highlight {
-            background-color: yellowgreen;
+            background: yellow;
         }
 
-
-      </style>
+    </style>
 </head>
+<body style="background-color: #999999">
+    <h2>Articles and sections</h2>
+    
+    <article style="background-color: #009688">
+        <section style="color:#999999; background-color: #bd3c14">
+            section 1 <i>with italic</i> and <u>underline</u>
+        </section>
 
+        <section>
+            <p>
+                section 2 <b>with bold text </b>
+            </p>
+        </section>
+    </article>
 
-<body style="background-color:rgb(247,231,180,0.8)">
-    
-        <a href="index.html"> Go to index</a>
-        <h2>Articles and sections</h2>
-    
-        <article style="background-color: #fff1f3">
-    <section style="color:white; background-color:#68c4af">
-        <center class="sect"> section 1 <i> with italics</i> and <u>underline</u> </center> 
-    </section>
-    
-    <section>
-        <center class="sect"> section 2 <b>with bold text</b> </center>
-    </section>
-    
-        </article>
-    
-        <h2> Tables </h2>
-        <!--<table border="0", style="background-color:#ccffff; border:4mm ridge rgb(170, 67, 67); text-align: center">--> 
-         <table border="0", style="background-color:#ccffff; border:5px ridge blue ; border-style:dotted solid double dashed ; text-align: center">
-                    
-            <thead>head 
-    
-    <caption> Title </caption>
-    <tr> 
-        <td><b>Columna 0 </b></td>
-        <td><b>Columna 1 </b></td>
-        <td><b>Columna 2 </b></td>
-    </tr>
-    
-            </thead>
-    
-            <tbody> 
-                <tr> <!-- row 0-->
-                    <td><div> div row 0, column0 🌈</div> </td>
-                    <td>row 0, column1 😸</td>
-                    <td>row 0, column2 😁</td>
-                </tr>
-                <tr> <!-- row 1-->
-                    <td>row 1, column0 😋 </td>
-                    <td>row 1, column1 😍</td>
-                    <td class="highlight">row 1, column2 ✨</td>
-                </tr>
-            </tbody>
-    
-        </table>
-        <h2>Lists</h2>
-        Unorder list
-        <ul style="background-color:#ccffff; border:15px ridge rgb(170, 67, 67)">
-            <li> Number 1</li>
-            <li> Number 2</li>
-        </ul>
-        Ordered list
-        <ol>
-                <li> Number </li>
-                <li> Number </li>
-        </ol>
-    <div> 
-        <h2>Controls</h2>
-        <button value="text">boton</button>
-        <br>
-        <br>
-        Drop-down
-    <select>
-    <option>Option 1</option>
-    <option>Option 2</option>
-    </select>
-    <br />
-    
-    <label title="Password" for=""> Password</label>
-    <br /> 
-    <input type="password" value="123" placeholder="pass"/>
-    <br /> Number
-    <input type="number"  placeholder="123"/>
-    
-    <br/>
-    <h3> Radio buttons</h3>
-    <input type="radio" name="animals" value="cats"> cats </input>
-    <input type="radio" name="animals" value="dogs"/> dogs </input>
-    
-    <br/>
-    <br/>
-    <label>Other:</label>
-    <input type="text">
-    <br/>
-    
-    <h3> Checkboxes</h3>
-    
-    <input type="checkbox"> Apples </input>
-    <input type="checkbox"> Grapes </input>
-    
+    <h2>Tables</h2>
+    <table border="0" style="background-color: #ff7878; border: 15px ridge rgb(170, 50, 220, .6); text-align: right">
+        <thead>
+            <caption>Table Title</caption>
+            <tr>
+                <td>
+                    <b>Column 0</b>
+                </td>
+                <td>
+                    Column 1
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- This is the actual body of the table -->
+
+            <!-- Row 0 -->
+            <tr>
+                <td>
+                    <div>
+                        Row 0, column 0
+                        😁
+                    </div>
+                </td>
+                <td>Row 0, column 1 😂</td>
+                <td>Row 0, column 2 😃</td>
+            </tr>
+
+            <!-- Row 1 -->
+            <tr>
+                <td>Row 1, column 0 😆</td>
+                <td>Row 1, column 1 😉</td>
+                <td class="highlight">Row 1, column 2 😊</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- List section-->
+
+    <h2 id="specialName">Lists</h2>
+
+    Un-order list
+    <ul style="background-color: #ff7878; border: 15px dashed rgb(170, 50, 220, .6);">
+        <li>Number 1</li>
+        <li>Number 2</li>
+    </ul>
+
+    Ordered list
+    <ol>
+        <li>Number 1</li>
+        <li>Number 2</li>
+    </ol>
+
+    <h2>Controls</h2>
+
+    <div>
+        <button value="button">Click me!</button>
+
+        <br />
+
+        <h3>
+            Drop-down
+        </h3>
+
+        <select>
+            <option>Option 1</option>
+            <option>Option 2</option>
+        </select>
+
+        <br />
+
+        <label class="highlight">Password</label>
+        <input type="password" value="123" />
+
+        <br />
+
+        <input type="number" placeholder="123" />
+
+        <br />
+
+        <h3>Radio buttons</h3>
+        <input type="radio" name="animals" value="cats">cats</input>
+        <input type="radio" name="animals" value="dogs">dogs</input>
+
+        <label>Other:</label>
+        <input type="text" />
+
+        <br />
+
+        <h3>
+            Checkboxes
+        </h3>
+        <input type="checkbox">apples</input>
+        <input type="checkbox">grapes</input>
     </div>
-    <p class="highlight">
-    New paragraph
 
+    <p class="highlight">
+        This is a new text
     </p>
 
     <footer>
         <hr />
-        Footer 
+        Footer page
     </footer>
-    </body>  
-
+</body>
 </html>
